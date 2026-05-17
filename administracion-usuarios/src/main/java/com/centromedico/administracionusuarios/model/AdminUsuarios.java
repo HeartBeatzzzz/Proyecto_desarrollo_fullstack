@@ -1,5 +1,7 @@
 package com.centromedico.administracionusuarios.model;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,33 +16,28 @@ import java.time.LocalDate;
 @Table(name = "admin_usuarios")
 public class AdminUsuarios {
     @Id
-    @Column(name = "id_usuario")
-    private Long id; // id recibido del ms usuario
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @Column(name = "id_auditoria")
+    private Long idAuditoria;
 
-    @Column(name = "rut_usuario", length = 10, nullable = false)
-    private String rutUsuario;
+    @NotBlank(message = "El ID del usuario no puede estar vacio")
+    @NotNull(message = "El ID del usuario es obligatorio")
+    private Long idUsuario;
 
-    @Column(name = "nombre_usuario", length = 100, nullable = false)
-    private String nombreUsuario;
+    @NotNull(message = "La accion es obligatoria")
+    @Column(name = "accion")
+    private String accion;
 
-    @Column(name = "id_ciudad", nullable = false)
-    private Long idCiudad;
+    @NotBlank(message = "El motivo no puede estar vacio")
+    @NotNull(message = "El motivo es obligatorio")
+    @Column(name = "motivo")
+    private String motivo;
 
-    @Column(name = "telefono_usuario", nullable = true, length = 20)
-    private String telefonoUsuario;
+    @NotNull(message = "El admin es obligatorio")
+    @Column(name = "admin_responsable")
+    private String adminResponsable;
 
-    @Column(name = "email_usuario", length = 100, nullable = false)
-    private String emailUsuario;
-
-    @Column(name = "estado_cuenta", length = 20)
-    private String estadoCuenta;
-
-    @Column(name = "fecha_creacion")
-    private LocalDate fechaCreacionLocal;
-
-    @Column(name = "fecha_ultima_sincronizacion")
-    private Date fechaSincronizacion;
-
-    @Column(name = "eliminado", nullable = true)
-    private boolean eliminado;
+    @NotNull(message = "La fecha no puede estar vacia")
+    @Column(name = "fecha")
+    private LocalDate fecha;
 }
