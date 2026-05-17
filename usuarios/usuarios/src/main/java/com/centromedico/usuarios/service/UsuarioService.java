@@ -10,7 +10,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -19,6 +21,12 @@ public class UsuarioService {
 
     private final UsuarioRepository usuarioRepository;
     private final CitaClient citaClient;
+
+    public List<UsuarioResponseDTO> obtenerTodos() {
+        return usuarioRepository.findAll().stream()
+                .map(this::mapToDTO)
+                .collect(Collectors.toList());
+    }
 
     public Optional<UsuarioResponseDTO> obtenerPorId(Long id) {
         return usuarioRepository.findById(id)
@@ -71,9 +79,6 @@ public class UsuarioService {
 
     /**
      * Cancela una cita existente para el usuario especificado.
-     * @param idUsuario ID del usuario (desde header X-User-Id)
-     * @param idCita ID de la cita a cancelar
-     * @param request DTO opcional con motivo de cancelación
      */
     @Transactional
     public CitaResponseDTO cancelarCita(Long idUsuario, Long idCita, CitaCancelacionRequestDTO request) {
@@ -111,7 +116,6 @@ public class UsuarioService {
     }
     /**
      * Convierte una entidad Usuario a UsuarioResponseDTO.
-     * Asume que Usuario tiene una relación @ManyToOne con Ciudad.
      */
     private UsuarioResponseDTO mapToDTO(Usuario u) {
         return new UsuarioResponseDTO(
@@ -120,7 +124,7 @@ public class UsuarioService {
                 u.getIdCita(),
                 u.getNombreUsuario(),
                 u.getFechaNacimiento(),
-                u.getIdCiudad().getId(),  // Obtiene el ID de la ciudad
+                u.getIdCiudad().getId(),
                 u.getTelefonoUsuario(),
                 u.getEmailUsuario()
         );

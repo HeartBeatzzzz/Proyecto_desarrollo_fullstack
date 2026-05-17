@@ -29,8 +29,6 @@ public class DataInitializer implements CommandLineRunner {
 
         log.info(">>> Cargando usuarios iniciales...");
 
-        // Corregido: se eliminó el ID hardcodeado (1L) — debe ser null para AUTO_INCREMENT.
-        // Corregido: ciudad era null, violando nullable = false en ID_CIUDAD.
         // Se usa orElseThrow para fallar de forma explícita si la ciudad no existe.
         usuarioRepository.saveAll(List.of(
                 new Usuario(null, "12345678-9", null, "Juan Pérez",

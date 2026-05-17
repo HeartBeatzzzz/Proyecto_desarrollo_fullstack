@@ -9,8 +9,10 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
-@RequestMapping("/usuarios/{id}/citas")
+@RequestMapping("api/v1/usuarios/{id}/citas")
 @RequiredArgsConstructor
 public class UsuarioCitaController {
 

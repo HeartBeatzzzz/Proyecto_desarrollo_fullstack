@@ -7,14 +7,21 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 
 @Valid
 @RestController
-@RequestMapping("/usuario")
+@RequestMapping("api/v1/usuarios")
 @RequiredArgsConstructor
 public class UsuarioController {
 
     private final UsuarioService usuarioService;
+
+    @GetMapping("/admin")
+    public ResponseEntity<List<UsuarioResponseDTO>> listarTodosParaAdmin() {
+        return ResponseEntity.ok(usuarioService.obtenerTodos());
+    }
 
     @GetMapping("/{id}")
     public ResponseEntity<UsuarioResponseDTO> obtenerPorId(@PathVariable Long id) {
@@ -22,9 +29,6 @@ public class UsuarioController {
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
-
-    // Aquí puedes agregar otros endpoints CRUD si los necesitas:
-    // @GetMapping, @PostMapping, @PutMapping, @DeleteMapping
 }
 
     //Hacerlo void permite especificar datos sin retornar necesariamente un body

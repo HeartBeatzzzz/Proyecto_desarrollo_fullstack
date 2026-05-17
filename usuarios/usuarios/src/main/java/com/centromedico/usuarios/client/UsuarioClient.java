@@ -7,11 +7,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient(name = "servicio-usuarios", url = "${usuarios-service.url}")
+@FeignClient(name = "servicio-usuarios", url = "${usuarios.service.url}")
 public interface UsuarioClient {
-
-    @GetMapping("/api/v1/usuarios")
-    List<UsuarioResponseDTO> obtenerTodos();
 
     @GetMapping("/api/v1/usuarios/{id}")
     UsuarioResponseDTO obtenerPorId(@PathVariable("id") Long id);
