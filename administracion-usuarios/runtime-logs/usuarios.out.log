@@ -1,0 +1,461 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.centromedico:usuarios >----------------------
+[INFO] Building usuarios 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.3.5:run (default-cli) > test-compile @ usuarios >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ usuarios ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 4 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ usuarios ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 17 source files with javac [debug parameters release 21] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ usuarios ---
+[INFO] skip non existing resourceDirectory C:\Users\ambar\OneDrive\Documentos\Proyectos duoc\usuarios\usuarios\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ usuarios ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 21] to target\test-classes
+[INFO] 
+[INFO] <<< spring-boot:3.3.5:run (default-cli) < test-compile @ usuarios <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.3.5:run (default-cli) @ usuarios ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2026-05-16T20:44:01.773-04:00  INFO 27516 --- [usuarios] [  restartedMain] c.c.usuarios.UsuariosApplication         : Starting UsuariosApplication using Java 21.0.10 with PID 27516 (C:\Users\ambar\OneDrive\Documentos\Proyectos duoc\usuarios\usuarios\target\classes started by ambar in C:\Users\ambar\OneDrive\Documentos\Proyectos duoc\usuarios\usuarios)
+2026-05-16T20:44:01.775-04:00  INFO 27516 --- [usuarios] [  restartedMain] c.c.usuarios.UsuariosApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T20:44:01.813-04:00  INFO 27516 --- [usuarios] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-16T20:44:01.814-04:00  INFO 27516 --- [usuarios] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-16T20:44:02.449-04:00  INFO 27516 --- [usuarios] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-16T20:44:02.498-04:00  INFO 27516 --- [usuarios] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2026-05-16T20:44:02.681-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d6ce48d3-bb83-3a36-be80-958d62130341
+2026-05-16T20:44:03.172-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-05-16T20:44:03.192-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T20:44:03.192-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-05-16T20:44:03.250-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-16T20:44:03.251-04:00  INFO 27516 --- [usuarios] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1436 ms
+2026-05-16T20:44:03.459-04:00  INFO 27516 --- [usuarios] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-16T20:44:03.557-04:00  INFO 27516 --- [usuarios] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@197bd265
+2026-05-16T20:44:03.558-04:00  INFO 27516 --- [usuarios] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-16T20:44:03.583-04:00  INFO 27516 --- [usuarios] [  restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mariadb://localhost/usuarios_db (MySQL 8.4)
+2026-05-16T20:44:03.597-04:00  WARN 27516 --- [usuarios] [  restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.
+2026-05-16T20:44:03.630-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.022s)
+2026-05-16T20:44:03.639-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `usuarios_db`: 4
+2026-05-16T20:44:03.641-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.f.core.internal.command.DbMigrate      : Schema `usuarios_db` is up to date. No migration necessary.
+2026-05-16T20:44:03.740-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-16T20:44:03.801-04:00  INFO 27516 --- [usuarios] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-05-16T20:44:03.835-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-16T20:44:04.120-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-16T20:44:04.167-04:00  WARN 27516 --- [usuarios] [  restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 8.4.3 version for [org.hibernate.dialect.MariaDBDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 10.4.0. Check the community dialects project for available legacy versions.
+2026-05-16T20:44:04.857-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-16T20:44:04.883-04:00  INFO 27516 --- [usuarios] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-16T20:44:05.219-04:00  WARN 27516 --- [usuarios] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-16T20:44:05.238-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-05-16T20:44:05.754-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-05-16T20:44:05.769-04:00  INFO 27516 --- [usuarios] [  restartedMain] c.c.usuarios.UsuariosApplication         : Started UsuariosApplication in 4.321 seconds (process running for 4.712)
+Hibernate: 
+    select
+        count(*) 
+    from
+        usuarios u1_0
+2026-05-16T20:44:06.075-04:00  INFO 27516 --- [usuarios] [  restartedMain] c.c.usuarios.config.DataInitializer      : >>> Usuarios ya cargados. Se omite inicializacion.
+2026-05-16T20:44:13.018-04:00  INFO 27516 --- [usuarios] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-16T20:44:13.018-04:00  INFO 27516 --- [usuarios] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-16T20:44:13.020-04:00  INFO 27516 --- [usuarios] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+Hibernate: 
+    select
+        u1_0.id_usuario,
+        u1_0.activo,
+        u1_0.email_usuario,
+        u1_0.fecha_nac_usuario,
+        u1_0.id_cita,
+        u1_0.id_ciudad,
+        u1_0.nombre_usuario,
+        u1_0.rut_usuario,
+        u1_0.telefono_usuario 
+    from
+        usuarios u1_0 
+    where
+        u1_0.activo
+Hibernate: 
+    select
+        c1_0.id_ciudad,
+        c1_0.comuna,
+        c1_0.nombre_ciudad 
+    from
+        ciudad c1_0 
+    where
+        c1_0.id_ciudad=?
+Hibernate: 
+    select
+        c1_0.id_ciudad,
+        c1_0.comuna,
+        c1_0.nombre_ciudad 
+    from
+        ciudad c1_0 
+    where
+        c1_0.id_ciudad=?
+Hibernate: 
+    select
+        u1_0.id_usuario,
+        u1_0.activo,
+        u1_0.email_usuario,
+        u1_0.fecha_nac_usuario,
+        u1_0.id_cita,
+        u1_0.id_ciudad,
+        u1_0.nombre_usuario,
+        u1_0.rut_usuario,
+        u1_0.telefono_usuario 
+    from
+        usuarios u1_0 
+    where
+        u1_0.activo
+Hibernate: 
+    select
+        c1_0.id_ciudad,
+        c1_0.comuna,
+        c1_0.nombre_ciudad 
+    from
+        ciudad c1_0 
+    where
+        c1_0.id_ciudad=?
+Hibernate: 
+    select
+        c1_0.id_ciudad,
+        c1_0.comuna,
+        c1_0.nombre_ciudad 
+    from
+        ciudad c1_0 
+    where
+        c1_0.id_ciudad=?
+Hibernate: 
+    select
+        c1_0.id_ciudad,
+        c1_0.comuna,
+        c1_0.nombre_ciudad 
+    from
+        ciudad c1_0 
+    where
+        c1_0.id_ciudad=?
+Hibernate: 
+    insert 
+    into
+        usuarios
+        (activo, email_usuario, fecha_nac_usuario, id_cita, id_ciudad, nombre_usuario, rut_usuario, telefono_usuario) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        u1_0.id_usuario,
+        u1_0.activo,
+        u1_0.email_usuario,
+        u1_0.fecha_nac_usuario,
+        u1_0.id_cita,
+        u1_0.id_ciudad,
+        u1_0.nombre_usuario,
+        u1_0.rut_usuario,
+        u1_0.telefono_usuario 
+    from
+        usuarios u1_0 
+    where
+        u1_0.id_usuario=? 
+        and u1_0.activo
+Hibernate: 
+    select
+        c1_0.id_ciudad,
+        c1_0.comuna,
+        c1_0.nombre_ciudad 
+    from
+        ciudad c1_0 
+    where
+        c1_0.id_ciudad=?
+Hibernate: 
+    select
+        c1_0.id_ciudad,
+        c1_0.comuna,
+        c1_0.nombre_ciudad 
+    from
+        ciudad c1_0 
+    where
+        c1_0.id_ciudad=?
+Hibernate: 
+    update
+        usuarios 
+    set
+        activo=?,
+        email_usuario=?,
+        fecha_nac_usuario=?,
+        id_cita=?,
+        id_ciudad=?,
+        nombre_usuario=?,
+        rut_usuario=?,
+        telefono_usuario=? 
+    where
+        id_usuario=?
+Hibernate: 
+    select
+        u1_0.id_usuario,
+        u1_0.activo,
+        u1_0.email_usuario,
+        u1_0.fecha_nac_usuario,
+        u1_0.id_cita,
+        u1_0.id_ciudad,
+        u1_0.nombre_usuario,
+        u1_0.rut_usuario,
+        u1_0.telefono_usuario 
+    from
+        usuarios u1_0 
+    where
+        u1_0.id_usuario=? 
+        and u1_0.activo
+Hibernate: 
+    select
+        c1_0.id_ciudad,
+        c1_0.comuna,
+        c1_0.nombre_ciudad 
+    from
+        ciudad c1_0 
+    where
+        c1_0.id_ciudad=?
+Hibernate: 
+    update
+        usuarios 
+    set
+        activo=?,
+        email_usuario=?,
+        fecha_nac_usuario=?,
+        id_cita=?,
+        id_ciudad=?,
+        nombre_usuario=?,
+        rut_usuario=?,
+        telefono_usuario=? 
+    where
+        id_usuario=?
+Hibernate: 
+    select
+        u1_0.id_usuario,
+        u1_0.activo,
+        u1_0.email_usuario,
+        u1_0.fecha_nac_usuario,
+        u1_0.id_cita,
+        u1_0.id_ciudad,
+        u1_0.nombre_usuario,
+        u1_0.rut_usuario,
+        u1_0.telefono_usuario 
+    from
+        usuarios u1_0 
+    where
+        u1_0.id_usuario=? 
+        and u1_0.activo
+2026-05-16T20:51:49.538-04:00  INFO 27516 --- [usuarios] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 5 class path changes (0 additions, 0 deletions, 5 modifications)
+2026-05-16T20:51:49.552-04:00  INFO 27516 --- [usuarios] [       Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-16T20:51:49.555-04:00  INFO 27516 --- [usuarios] [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-16T20:51:49.559-04:00  INFO 27516 --- [usuarios] [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2026-05-16T20:51:49.662-04:00  INFO 27516 --- [usuarios] [  restartedMain] c.c.usuarios.UsuariosApplication         : Starting UsuariosApplication using Java 21.0.10 with PID 27516 (C:\Users\ambar\OneDrive\Documentos\Proyectos duoc\usuarios\usuarios\target\classes started by ambar in C:\Users\ambar\OneDrive\Documentos\Proyectos duoc\usuarios\usuarios)
+2026-05-16T20:51:49.662-04:00  INFO 27516 --- [usuarios] [  restartedMain] c.c.usuarios.UsuariosApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T20:51:49.927-04:00  INFO 27516 --- [usuarios] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-16T20:51:49.942-04:00  INFO 27516 --- [usuarios] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2026-05-16T20:51:50.012-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d6ce48d3-bb83-3a36-be80-958d62130341
+2026-05-16T20:51:50.110-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-05-16T20:51:50.113-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T20:51:50.113-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-05-16T20:51:50.153-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-16T20:51:50.153-04:00  INFO 27516 --- [usuarios] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 489 ms
+2026-05-16T20:51:50.204-04:00  INFO 27516 --- [usuarios] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-05-16T20:51:50.213-04:00  INFO 27516 --- [usuarios] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.mariadb.jdbc.Connection@35466ed8
+2026-05-16T20:51:50.213-04:00  INFO 27516 --- [usuarios] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-05-16T20:51:50.219-04:00  INFO 27516 --- [usuarios] [  restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mariadb://localhost/usuarios_db (MySQL 8.4)
+2026-05-16T20:51:50.221-04:00  WARN 27516 --- [usuarios] [  restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.
+2026-05-16T20:51:50.232-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.007s)
+2026-05-16T20:51:50.238-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `usuarios_db`: 4
+2026-05-16T20:51:50.238-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.f.core.internal.command.DbMigrate      : Schema `usuarios_db` is up to date. No migration necessary.
+2026-05-16T20:51:50.270-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-16T20:51:50.273-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-16T20:51:50.281-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-16T20:51:50.283-04:00  WARN 27516 --- [usuarios] [  restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 8.4.3 version for [org.hibernate.dialect.MariaDBDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 10.4.0. Check the community dialects project for available legacy versions.
+2026-05-16T20:51:50.358-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-16T20:51:50.364-04:00  INFO 27516 --- [usuarios] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-16T20:51:50.467-04:00  WARN 27516 --- [usuarios] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-16T20:51:50.476-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-05-16T20:51:50.674-04:00  INFO 27516 --- [usuarios] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-05-16T20:51:50.683-04:00  INFO 27516 --- [usuarios] [  restartedMain] c.c.usuarios.UsuariosApplication         : Started UsuariosApplication in 1.069 seconds (process running for 469.626)
+Hibernate: 
+    select
+        count(*) 
+    from
+        usuarios u1_0
+2026-05-16T20:51:50.688-04:00  INFO 27516 --- [usuarios] [  restartedMain] c.c.usuarios.config.DataInitializer      : >>> Usuarios ya cargados. Se omite inicializacion.
+2026-05-16T20:51:50.690-04:00  INFO 27516 --- [usuarios] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-16T20:52:11.173-04:00  INFO 27516 --- [usuarios] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-16T20:52:11.173-04:00  INFO 27516 --- [usuarios] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-16T20:52:11.175-04:00  INFO 27516 --- [usuarios] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+Hibernate: 
+    select
+        u1_0.id_usuario,
+        u1_0.activo,
+        u1_0.email_usuario,
+        u1_0.fecha_nac_usuario,
+        u1_0.id_cita,
+        u1_0.id_ciudad,
+        u1_0.nombre_usuario,
+        u1_0.rut_usuario,
+        u1_0.telefono_usuario 
+    from
+        usuarios u1_0 
+    where
+        u1_0.activo
+Hibernate: 
+    select
+        c1_0.id_ciudad,
+        c1_0.comuna,
+        c1_0.nombre_ciudad 
+    from
+        ciudad c1_0 
+    where
+        c1_0.id_ciudad=?
+Hibernate: 
+    select
+        c1_0.id_ciudad,
+        c1_0.comuna,
+        c1_0.nombre_ciudad 
+    from
+        ciudad c1_0 
+    where
+        c1_0.id_ciudad=?
+Hibernate: 
+    select
+        u1_0.id_usuario,
+        u1_0.activo,
+        u1_0.email_usuario,
+        u1_0.fecha_nac_usuario,
+        u1_0.id_cita,
+        u1_0.id_ciudad,
+        u1_0.nombre_usuario,
+        u1_0.rut_usuario,
+        u1_0.telefono_usuario 
+    from
+        usuarios u1_0 
+    where
+        u1_0.activo
+Hibernate: 
+    select
+        c1_0.id_ciudad,
+        c1_0.comuna,
+        c1_0.nombre_ciudad 
+    from
+        ciudad c1_0 
+    where
+        c1_0.id_ciudad=?
+Hibernate: 
+    select
+        c1_0.id_ciudad,
+        c1_0.comuna,
+        c1_0.nombre_ciudad 
+    from
+        ciudad c1_0 
+    where
+        c1_0.id_ciudad=?
+Hibernate: 
+    select
+        u1_0.id_usuario,
+        u1_0.activo,
+        u1_0.email_usuario,
+        u1_0.fecha_nac_usuario,
+        u1_0.id_cita,
+        u1_0.id_ciudad,
+        u1_0.nombre_usuario,
+        u1_0.rut_usuario,
+        u1_0.telefono_usuario 
+    from
+        usuarios u1_0 
+    where
+        u1_0.activo
+Hibernate: 
+    select
+        c1_0.id_ciudad,
+        c1_0.comuna,
+        c1_0.nombre_ciudad 
+    from
+        ciudad c1_0 
+    where
+        c1_0.id_ciudad=?
+Hibernate: 
+    select
+        c1_0.id_ciudad,
+        c1_0.comuna,
+        c1_0.nombre_ciudad 
+    from
+        ciudad c1_0 
+    where
+        c1_0.id_ciudad=?
+Hibernate: 
+    select
+        u1_0.id_usuario,
+        u1_0.activo,
+        u1_0.email_usuario,
+        u1_0.fecha_nac_usuario,
+        u1_0.id_cita,
+        u1_0.id_ciudad,
+        u1_0.nombre_usuario,
+        u1_0.rut_usuario,
+        u1_0.telefono_usuario 
+    from
+        usuarios u1_0 
+    where
+        u1_0.activo
+Hibernate: 
+    select
+        c1_0.id_ciudad,
+        c1_0.comuna,
+        c1_0.nombre_ciudad 
+    from
+        ciudad c1_0 
+    where
+        c1_0.id_ciudad=?
+Hibernate: 
+    select
+        c1_0.id_ciudad,
+        c1_0.comuna,
+        c1_0.nombre_ciudad 
+    from
+        ciudad c1_0 
+    where
+        c1_0.id_ciudad=?
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  10:06 min
+[INFO] Finished at: 2026-05-16T20:54:02-04:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.3.5:run (default-cli) on project usuarios: Process terminated with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
