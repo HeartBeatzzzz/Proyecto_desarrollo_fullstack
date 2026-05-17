@@ -41,4 +41,7 @@ public class Usuario {
 
     @Column(name = "EMAIL_USUARIO", nullable = false, length = 100)
     private String emailUsuario;
+
+    @Column(name = "ACTIVO", nullable = false)
+    private Boolean activo;
 }

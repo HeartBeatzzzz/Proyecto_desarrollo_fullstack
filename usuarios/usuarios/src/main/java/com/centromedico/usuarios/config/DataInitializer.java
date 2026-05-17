@@ -23,31 +23,30 @@ public class DataInitializer implements CommandLineRunner {
     public void run(String... args) {
 
         if (usuarioRepository.count() > 0) {
-            log.info(">>> Usuarios ya cargados. Se omite inicialización.");
+            log.info(">>> Usuarios ya cargados. Se omite inicializacion.");
             return;
         }
 
         log.info(">>> Cargando usuarios iniciales...");
 
-        // Se usa orElseThrow para fallar de forma explícita si la ciudad no existe.
         usuarioRepository.saveAll(List.of(
-                new Usuario(null, "12345678-9", null, "Juan Pérez",
+                new Usuario(null, "12345678-9", null, "Juan Perez",
                         LocalDate.of(1995, 5, 12),
                         ciudadRepository.findById(1L)
                                 .orElseThrow(() -> new RuntimeException("Ciudad ID 1 no encontrada")),
-                        "+56911111111", "juan.perez@gmail.com"),
+                        "+56911111111", "juan.perez@gmail.com", true),
 
-                new Usuario(null, "98765432-1", null, "María González",
+                new Usuario(null, "98765432-1", null, "Maria Gonzalez",
                         LocalDate.of(1988, 10, 3),
                         ciudadRepository.findById(2L)
                                 .orElseThrow(() -> new RuntimeException("Ciudad ID 2 no encontrada")),
-                        "+56922222222", "maria.gonzalez@gmail.com"),
+                        "+56922222222", "maria.gonzalez@gmail.com", true),
 
                 new Usuario(null, "11222333-4", null, "Carlos Rojas",
                         LocalDate.of(2000, 1, 25),
                         ciudadRepository.findById(1L)
                                 .orElseThrow(() -> new RuntimeException("Ciudad ID 1 no encontrada")),
-                        "+56933333333", "carlos.rojas@gmail.com")
+                        "+56933333333", "carlos.rojas@gmail.com", true)
         ));
 
         log.info(">>> 3 usuarios cargados correctamente.");
