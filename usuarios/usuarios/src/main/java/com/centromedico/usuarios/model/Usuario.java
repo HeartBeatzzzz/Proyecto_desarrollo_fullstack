@@ -22,7 +22,6 @@ public class Usuario {
     @Column(name = "RUT_USUARIO", nullable = false, length = 10)
     private String rutUsuario;
 
-    // Nullable: un usuario puede existir sin cita asignada.
     // La relación real la gestiona el microservicio de Reservas.
     @Column(name = "ID_CITA", nullable = true)
     private Long idCita;
@@ -33,7 +32,6 @@ public class Usuario {
     @Column(name = "FECHA_NAC_USUARIO", nullable = false)
     private LocalDate fechaNacimiento;
 
-    // Corregido: @ManyToOne debe anotarse sobre la entidad Ciudad, no sobre un Long.
     @ManyToOne
     @JoinColumn(name = "ID_CIUDAD", nullable = false)
     private Ciudad idCiudad;
