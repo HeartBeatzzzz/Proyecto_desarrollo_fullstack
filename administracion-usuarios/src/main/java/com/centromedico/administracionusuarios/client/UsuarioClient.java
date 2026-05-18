@@ -15,18 +15,18 @@ import java.util.List;
 @FeignClient(name = "servicio-usuarios", url = "${usuarios.service.url}")
 public interface UsuarioClient {
 
-    @GetMapping("/api/v1/usuarios/admin")
+    @GetMapping("/api/usuarios/admin")
     List<UsuarioResponseDTO> obtenerTodos();
 
-    @GetMapping("/api/v1/usuarios/admin/{id}")
+    @GetMapping("/api/usuarios/admin{id}")
     UsuarioResponseDTO obtenerPorId(@PathVariable("id") Long id);
 
-    @PostMapping("/api/v1/usuarios/admin")
+    @PostMapping("/api/usuarios/admin")
     UsuarioResponseDTO crear(@RequestBody UsuarioRequestDTO dto);
 
-    @PutMapping("/api/v1/usuarios/admin/{id}")
+    @PutMapping("/api/usuarios/admin")
     UsuarioResponseDTO actualizar(@PathVariable("id") Long id, @RequestBody UsuarioRequestDTO dto);
 
-    @DeleteMapping("/api/v1/usuarios/admin/{id}")
+    @DeleteMapping("/api/usuarios/admin/{id}")
     void eliminar(@PathVariable("id") Long id);
 }
