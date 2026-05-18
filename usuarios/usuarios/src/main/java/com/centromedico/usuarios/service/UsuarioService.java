@@ -66,18 +66,12 @@ public class UsuarioService {
         return true;
     }
 
-    /**
-     * Agenda una cita para el usuario especificado.
-     *  idUsuario ID del usuario (desde header X-User-Id)
-     * request DTO con datos de la cita (idEmp, fechaCita, tipoCita)
-     */
-
     // En UsuarioService.java
 
     //Obtiene la cita asociada al usuario (campo idCita de la entidad Usuario).
 
     public CitaResponseDTO obtenerCitaPorUsuario(Long idUsuario) {
-        Usuario usuario = usuarioRepository.findByIdUsuarioAndActivoTrue(idUsuario)
+        Usuario usuario = usuarioRepository.findById(idUsuario)
                 .orElseThrow(() -> new RuntimeException("Usuario no encontrado"));
         if (usuario.getIdCita() == null) {
             return null;
@@ -94,7 +88,7 @@ public class UsuarioService {
     public CitaResponseDTO agendarCita(Long idUsuario, CitaCreacionRequestDTO request) {
         log.info("Usuario {} intenta agendar una cita", idUsuario);
 
-        Usuario usuario = usuarioRepository.findByIdUsuarioAndActivoTrue(idUsuario)
+        Usuario usuario = usuarioRepository.findById(idUsuario)
                 .orElseThrow(() -> new RuntimeException("Usuario no encontrado con ID: " + idUsuario));
 
         // Inyectar el ID del usuario en el DTO (el cliente no lo envió)
@@ -117,7 +111,7 @@ public class UsuarioService {
     public CitaResponseDTO cancelarCita(Long idUsuario, Long idCita, CitaCancelacionRequestDTO request) {
         log.info("Usuario {} intenta cancelar la cita {}", idUsuario, idCita);
 
-        Usuario usuario = usuarioRepository.findByIdUsuarioAndActivoTrue(idUsuario)
+        Usuario usuario = usuarioRepository.findById(idUsuario)
                 .orElseThrow(() -> new RuntimeException("Usuario no encontrado con ID: " + idUsuario));
 
         // Verificar que la cita pertenezca al usuario

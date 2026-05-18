@@ -19,7 +19,7 @@ import java.util.List;
 
 @Valid
 @RestController
-@RequestMapping("/api/v1/usuarios")
+@RequestMapping("/api/usuarios")
 @RequiredArgsConstructor
 public class UsuarioController {
 
@@ -45,7 +45,12 @@ public class UsuarioController {
     }
 
     @PostMapping("/admin")
-    public ResponseEntity<UsuarioResponseDTO> crear(@Valid @RequestBody UsuarioRequestDTO dto) {
+    public ResponseEntity<UsuarioResponseDTO> crearAdmin(@Valid @RequestBody UsuarioRequestDTO dto) {
+        return ResponseEntity.status(201).body(usuarioService.crear(dto));
+    }
+
+    @PostMapping
+    public ResponseEntity<UsuarioResponseDTO> crearUsuario(@Valid @RequestBody UsuarioRequestDTO dto) {
         return ResponseEntity.status(201).body(usuarioService.crear(dto));
     }
 
@@ -56,6 +61,8 @@ public class UsuarioController {
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
+
+
 
     @DeleteMapping("/admin/{id}")
     public ResponseEntity<Void> eliminar(@PathVariable Long id) {

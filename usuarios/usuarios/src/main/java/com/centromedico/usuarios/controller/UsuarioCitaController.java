@@ -12,36 +12,32 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/v1/usuarios/{id}/citas")
+@RequestMapping("/api/usuarios/{usuarioId}/citas")
 @RequiredArgsConstructor
 public class UsuarioCitaController {
 
     private final UsuarioService usuarioService;
 
-    // Obtener la cita actual del usuario (si existe)
     @GetMapping
-    public ResponseEntity<CitaResponseDTO> obtenerCita(@PathVariable Long id) {
-        CitaResponseDTO cita = usuarioService.obtenerCitaPorUsuario(id);
-        if (cita == null) {
-            return ResponseEntity.noContent().build(); // 204 si no tiene cita
-        }
-        return ResponseEntity.ok(cita);
+    public ResponseEntity<CitaResponseDTO> obtenerCita(@PathVariable Long usuarioId) {
+        CitaResponseDTO cita = usuarioService.obtenerCitaPorUsuario(usuarioId);
+        return cita != null ? ResponseEntity.ok(cita) : ResponseEntity.noContent().build();
     }
 
     @PostMapping
     public ResponseEntity<CitaResponseDTO> agendarCita(
-            @PathVariable Long id,
+            @PathVariable Long usuarioId,
             @Valid @RequestBody CitaCreacionRequestDTO request) {
-        CitaResponseDTO nuevaCita = usuarioService.agendarCita(id, request);
+        CitaResponseDTO nuevaCita = usuarioService.agendarCita(usuarioId, request);
         return ResponseEntity.status(201).body(nuevaCita);
     }
 
-    @PutMapping("/{idCita}/cancelar")
+    @PutMapping("/{citaId}/cancelar")
     public ResponseEntity<CitaResponseDTO> cancelarCita(
-            @PathVariable Long id,
-            @PathVariable Long idCita,
+            @PathVariable Long usuarioId,
+            @PathVariable Long citaId,
             @RequestBody(required = false) CitaCancelacionRequestDTO request) {
-        CitaResponseDTO citaCancelada = usuarioService.cancelarCita(id, idCita, request);
+        CitaResponseDTO citaCancelada = usuarioService.cancelarCita(usuarioId, citaId, request);
         return ResponseEntity.ok(citaCancelada);
     }
 }

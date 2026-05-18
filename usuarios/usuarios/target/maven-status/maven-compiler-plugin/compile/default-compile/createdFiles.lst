@@ -1,0 +1,4 @@
+com\centromedico\usuarios\config\SecurityProperties$Credentials.class
+com\centromedico\usuarios\config\SecurityProperties.class
+com\centromedico\usuarios\controller\AuthController.class
+com\centromedico\usuarios\config\SecurityConfig.class

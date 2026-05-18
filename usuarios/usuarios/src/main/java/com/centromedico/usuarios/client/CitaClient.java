@@ -6,8 +6,9 @@ import com.centromedico.usuarios.dto.CitaResponseDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
-@FeignClient(name = "servicio-citas", url = "${citas.service.url}")
+@FeignClient(name = "servicio-reservas", url = "${reservas.service.url}")
 public interface CitaClient {
+
     @PostMapping("/api/citas")
     CitaResponseDTO crearCita(@RequestBody CitaCreacionRequestDTO request);
 

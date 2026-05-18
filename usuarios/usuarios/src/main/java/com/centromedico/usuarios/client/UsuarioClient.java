@@ -10,6 +10,6 @@ import java.util.List;
 @FeignClient(name = "servicio-usuarios", url = "${usuarios.service.url}")
 public interface UsuarioClient {
 
-    @GetMapping("/api/v1/usuarios/{id}")
+    @GetMapping("/api/usuarios/{id}")
     UsuarioResponseDTO obtenerPorId(@PathVariable("id") Long id);
 }
