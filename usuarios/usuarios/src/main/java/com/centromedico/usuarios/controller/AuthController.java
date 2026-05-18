@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class AuthController {
 
+    // controlador que sirve páginas HTML simples para los formularios de login.
+
     @GetMapping(value = "/login/usuario", produces = MediaType.TEXT_HTML_VALUE)
     @ResponseBody
     public String loginUsuario() {

@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.sql.Date;
+import java.time.LocalDate;
 
 @Data
 @AllArgsConstructor
@@ -17,7 +18,7 @@ import java.sql.Date;
 public class CitaResponseDTO {
     private Long idCita;
     private String tipoCita;
-    private Date fechaCita;
+    private LocalDate fechaCita;
     private String idEmp;
     private String disponibilidadCita;
 

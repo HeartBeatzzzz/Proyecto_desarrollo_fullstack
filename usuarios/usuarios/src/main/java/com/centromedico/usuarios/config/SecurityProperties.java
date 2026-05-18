@@ -10,6 +10,9 @@ import org.springframework.validation.annotation.Validated;
 @Setter
 @Validated
 @ConfigurationProperties(prefix = "app.security")
+/* Clase que mapea las propiedades con prefijo "app.security" del archivo application.properties.
+  Permite inyectar las credenciales de administrador y usuario*/
+
 public class SecurityProperties {
 
     private final Credentials admin = new Credentials();
@@ -18,7 +21,7 @@ public class SecurityProperties {
     @Getter
     @Setter
     public static class Credentials {
-
+        //clase que representa un login con usuario y contraseña
         @NotBlank
         private String username;
 
