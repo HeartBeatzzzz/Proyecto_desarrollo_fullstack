@@ -1,0 +1,104 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.centromedico:usuarios >----------------------
+[INFO] Building usuarios 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.0.6:run (default-cli) > test-compile @ usuarios >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ usuarios ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 4 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ usuarios ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ usuarios ---
+[INFO] skip non existing resourceDirectory C:\Users\ambar\OneDrive\Documentos\Proyectos duoc\Proyecto_desarrollo_fullstack-main\Proyecto_desarrollo_fullstack-main\usuarios\usuarios\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ usuarios ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:4.0.6:run (default-cli) < test-compile @ usuarios <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.0.6:run (default-cli) @ usuarios ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.6)
+
+2026-06-14T20:44:42.260-04:00  INFO 4484 --- [usuarios] [  restartedMain] c.c.usuarios.UsuariosApplication         : Starting UsuariosApplication using Java 21.0.10 with PID 4484 (C:\Users\ambar\OneDrive\Documentos\Proyectos duoc\Proyecto_desarrollo_fullstack-main\Proyecto_desarrollo_fullstack-main\usuarios\usuarios\target\classes started by ambar in C:\Users\ambar\OneDrive\Documentos\Proyectos duoc\Proyecto_desarrollo_fullstack-main\Proyecto_desarrollo_fullstack-main\usuarios\usuarios)
+2026-06-14T20:44:42.269-04:00  INFO 4484 --- [usuarios] [  restartedMain] c.c.usuarios.UsuariosApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-06-14T20:44:42.319-04:00  INFO 4484 --- [usuarios] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-14T20:44:42.319-04:00  INFO 4484 --- [usuarios] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-14T20:44:42.920-04:00  INFO 4484 --- [usuarios] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-14T20:44:42.977-04:00  INFO 4484 --- [usuarios] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2026-06-14T20:44:43.226-04:00  INFO 4484 --- [usuarios] [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e2bf897e-d97b-3f35-b5dc-df824ac5264c
+2026-06-14T20:44:43.735-04:00  INFO 4484 --- [usuarios] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-06-14T20:44:43.763-04:00  INFO 4484 --- [usuarios] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-14T20:44:43.763-04:00  INFO 4484 --- [usuarios] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-14T20:44:43.810-04:00  INFO 4484 --- [usuarios] [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1491 ms
+2026-06-14T20:44:44.143-04:00  INFO 4484 --- [usuarios] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-14T20:44:44.243-04:00  INFO 4484 --- [usuarios] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@46b96af3
+2026-06-14T20:44:44.260-04:00  INFO 4484 --- [usuarios] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-14T20:44:44.286-04:00  INFO 4484 --- [usuarios] [  restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mariadb://localhost/usuarios_db?user=root (MySQL 8.4)
+2026-06-14T20:44:44.294-04:00  WARN 4484 --- [usuarios] [  restartedMain] o.f.c.internal.database.base.Database    : Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-06-14T20:44:44.333-04:00  INFO 4484 --- [usuarios] [  restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.025s)
+2026-06-14T20:44:44.343-04:00  INFO 4484 --- [usuarios] [  restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `usuarios_db`: 4
+2026-06-14T20:44:44.345-04:00  INFO 4484 --- [usuarios] [  restartedMain] o.f.core.internal.command.DbMigrate      : Schema `usuarios_db` is up to date. No migration necessary.
+2026-06-14T20:44:44.423-04:00  INFO 4484 --- [usuarios] [  restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-14T20:44:44.506-04:00  INFO 4484 --- [usuarios] [  restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-14T20:44:44.954-04:00  INFO 4484 --- [usuarios] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-14T20:44:45.014-04:00  WARN 4484 --- [usuarios] [  restartedMain] org.hibernate.orm.core                   : HHH000511: The 8.4.3 version for [org.hibernate.dialect.MariaDBDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 10.6.0. Check the community dialects project for available legacy versions.
+2026-06-14T20:44:45.029-04:00  INFO 4484 --- [usuarios] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mariadb://localhost/usuarios_db?user=root]
+	Database driver: MariaDB Connector/J
+	Database dialect: MariaDBDialect
+	Database version: 8.4.3
+	Default catalog/schema: usuarios_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-14T20:44:45.750-04:00  INFO 4484 --- [usuarios] [  restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-14T20:44:45.808-04:00  INFO 4484 --- [usuarios] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-14T20:44:45.871-04:00  INFO 4484 --- [usuarios] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-14T20:44:46.095-04:00  WARN 4484 --- [usuarios] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-14T20:44:46.287-04:00  INFO 4484 --- [usuarios] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-06-14T20:44:46.750-04:00  WARN 4484 --- [usuarios] [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-06-14T20:44:46.754-04:00  INFO 4484 --- [usuarios] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-14T20:44:46.754-04:00  INFO 4484 --- [usuarios] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-14T20:44:46.760-04:00  INFO 4484 --- [usuarios] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-14T20:44:46.770-04:00  INFO 4484 --- [usuarios] [  restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-06-14T20:44:46.781-04:00 ERROR 4484 --- [usuarios] [  restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.659 s
+[INFO] Finished at: 2026-06-14T20:44:46-04:00
+[INFO] ------------------------------------------------------------------------
