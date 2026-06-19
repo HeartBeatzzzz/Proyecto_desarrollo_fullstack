@@ -1,0 +1,229 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< com.centromedico:administracion-usuarios >--------------
+[INFO] Building administracion-usuarios 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.3.5:run (default-cli) > test-compile @ administracion-usuarios >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ administracion-usuarios ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ administracion-usuarios ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ administracion-usuarios ---
+[INFO] skip non existing resourceDirectory C:\Users\ambar\OneDrive\Documentos\Proyectos duoc\administracion-usuarios\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ administracion-usuarios ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.3.5:run (default-cli) < test-compile @ administracion-usuarios <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.3.5:run (default-cli) @ administracion-usuarios ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2026-05-16T20:50:32.519-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] c.c.a.AdministracionUsuariosApplication  : Starting AdministracionUsuariosApplication using Java 21.0.10 with PID 27272 (C:\Users\ambar\OneDrive\Documentos\Proyectos duoc\administracion-usuarios\target\classes started by ambar in C:\Users\ambar\OneDrive\Documentos\Proyectos duoc\administracion-usuarios)
+2026-05-16T20:50:32.519-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] c.c.a.AdministracionUsuariosApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T20:50:32.557-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-16T20:50:32.557-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-16T20:50:33.105-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-16T20:50:33.147-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interface.
+2026-05-16T20:50:33.305-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4c55ee9e-6970-33ce-924a-cdc08e92a679
+2026-05-16T20:50:33.702-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2026-05-16T20:50:33.709-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T20:50:33.709-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-05-16T20:50:33.757-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-16T20:50:33.757-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1200 ms
+2026-05-16T20:50:33.933-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-16T20:50:34.016-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@700b50b1
+2026-05-16T20:50:34.022-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-16T20:50:34.050-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mariadb://localhost/admin_usuarios_db (MySQL 8.4)
+2026-05-16T20:50:34.059-04:00  WARN 27272 --- [administracion-usuarios] [  restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.
+2026-05-16T20:50:34.077-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table `admin_usuarios_db`.`flyway_schema_history` does not exist yet
+2026-05-16T20:50:34.078-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.012s)
+2026-05-16T20:50:34.092-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table `admin_usuarios_db`.`flyway_schema_history` ...
+2026-05-16T20:50:34.175-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `admin_usuarios_db`: << Empty Schema >>
+2026-05-16T20:50:34.175-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema `admin_usuarios_db` to version "1 - crear admin usuarios"
+2026-05-16T20:50:34.251-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema `admin_usuarios_db`, now at version v1 (execution time 00:00.047s)
+2026-05-16T20:50:34.310-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-16T20:50:34.356-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-05-16T20:50:34.381-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-16T20:50:34.614-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-16T20:50:34.663-04:00  WARN 27272 --- [administracion-usuarios] [  restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 8.4.3 version for [org.hibernate.dialect.MariaDBDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 10.4.0. Check the community dialects project for available legacy versions.
+2026-05-16T20:50:35.324-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-16T20:50:35.343-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-16T20:50:35.420-04:00  WARN 27272 --- [administracion-usuarios] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-16T20:50:35.434-04:00  WARN 27272 --- [administracion-usuarios] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2026-05-16T20:50:35.929-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2026-05-16T20:50:35.941-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] c.c.a.AdministracionUsuariosApplication  : Started AdministracionUsuariosApplication in 3.754 seconds (process running for 4.154)
+2026-05-16T20:50:46.878-04:00  INFO 27272 --- [administracion-usuarios] [nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-16T20:50:46.878-04:00  INFO 27272 --- [administracion-usuarios] [nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-16T20:50:46.880-04:00  INFO 27272 --- [administracion-usuarios] [nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+Hibernate: 
+    insert 
+    into
+        admin_usuarios
+        (accion, admin_responsable, id_usuario, motivo) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        admin_usuarios
+        (accion, admin_responsable, id_usuario, motivo) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        admin_usuarios
+        (accion, admin_responsable, id_usuario, motivo) 
+    values
+        (?, ?, ?, ?)
+2026-05-16T20:55:51.688-04:00  INFO 27272 --- [administracion-usuarios] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 10 class path changes (0 additions, 9 deletions, 1 modification)
+2026-05-16T20:55:51.700-04:00  INFO 27272 --- [administracion-usuarios] [       Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-16T20:55:51.703-04:00  INFO 27272 --- [administracion-usuarios] [       Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-16T20:55:51.706-04:00  INFO 27272 --- [administracion-usuarios] [       Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2026-05-16T20:55:51.790-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] c.c.a.AdministracionUsuariosApplication  : Starting AdministracionUsuariosApplication using Java 21.0.10 with PID 27272 (C:\Users\ambar\OneDrive\Documentos\Proyectos duoc\administracion-usuarios\target\classes started by ambar in C:\Users\ambar\OneDrive\Documentos\Proyectos duoc\administracion-usuarios)
+2026-05-16T20:55:51.791-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] c.c.a.AdministracionUsuariosApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T20:55:52.002-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-16T20:55:52.008-04:00  WARN 27272 --- [administracion-usuarios] [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: java.lang.TypeNotPresentException: Type com.centromedico.administracionusuarios.model.AdminUsuarios not present
+2026-05-16T20:55:52.014-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-05-16T20:55:52.041-04:00 ERROR 27272 --- [administracion-usuarios] [  restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.TypeNotPresentException: Type com.centromedico.administracionusuarios.model.AdminUsuarios not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117) ~[na:na]
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125) ~[na:na]
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49) ~[na:na]
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68) ~[na:na]
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138) ~[na:na]
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49) ~[na:na]
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117) ~[na:na]
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95) ~[na:na]
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1298) ~[na:na]
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:517) ~[spring-core-6.1.14.jar:6.1.14]
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:465) ~[spring-core-6.1.14.jar:6.1.14]
+	at org.springframework.data.util.TypeDiscoverer.getSuperTypeInformation(TypeDiscoverer.java:256) ~[spring-data-commons-3.3.5.jar:3.3.5]
+	at org.springframework.data.util.ClassTypeInformation.getSuperTypeInformation(ClassTypeInformation.java:36) ~[spring-data-commons-3.3.5.jar:3.3.5]
+	at org.springframework.data.util.TypeInformation.getRequiredSuperTypeInformation(TypeInformation.java:327) ~[spring-data-commons-3.3.5.jar:3.3.5]
+	at org.springframework.data.repository.core.support.DefaultRepositoryMetadata.<init>(DefaultRepositoryMetadata.java:55) ~[spring-data-commons-3.3.5.jar:3.3.5]
+	at org.springframework.data.repository.core.support.AbstractRepositoryMetadata.getMetadata(AbstractRepositoryMetadata.java:77) ~[spring-data-commons-3.3.5.jar:3.3.5]
+	at org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport.getRepositoryConfigurations(RepositoryConfigurationExtensionSupport.java:92) ~[spring-data-commons-3.3.5.jar:3.3.5]
+	at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:168) ~[spring-data-commons-3.3.5.jar:3.3.5]
+	at org.springframework.boot.autoconfigure.data.AbstractRepositoryConfigurationSourceSupport.registerBeanDefinitions(AbstractRepositoryConfigurationSourceSupport.java:62) ~[spring-boot-autoconfigure-3.3.5.jar:3.3.5]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:376) ~[spring-context-6.1.14.jar:6.1.14]
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:986) ~[na:na]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:375) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:429) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:789) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:607) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.5.jar:3.3.5]
+	at com.centromedico.administracionusuarios.AdministracionUsuariosApplication.main(AdministracionUsuariosApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.5.jar:3.3.5]
+Caused by: java.lang.ClassNotFoundException: com.centromedico.administracionusuarios.model.AdminUsuarios
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:536) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:515) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.3.5.jar:3.3.5]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:536) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:515) ~[na:na]
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114) ~[na:na]
+	... 39 common frames omitted
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2026-05-16T20:55:53.534-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] c.c.a.AdministracionUsuariosApplication  : Starting AdministracionUsuariosApplication using Java 21.0.10 with PID 27272 (C:\Users\ambar\OneDrive\Documentos\Proyectos duoc\administracion-usuarios\target\classes started by ambar in C:\Users\ambar\OneDrive\Documentos\Proyectos duoc\administracion-usuarios)
+2026-05-16T20:55:53.534-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] c.c.a.AdministracionUsuariosApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-05-16T20:55:53.771-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-16T20:55:53.782-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interface.
+2026-05-16T20:55:53.856-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4c55ee9e-6970-33ce-924a-cdc08e92a679
+2026-05-16T20:55:53.945-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2026-05-16T20:55:53.947-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-16T20:55:53.947-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-05-16T20:55:53.979-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-16T20:55:53.979-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 442 ms
+2026-05-16T20:55:54.029-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-05-16T20:55:54.037-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.mariadb.jdbc.Connection@2953c362
+2026-05-16T20:55:54.037-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-05-16T20:55:54.039-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mariadb://localhost/admin_usuarios_db (MySQL 8.4)
+2026-05-16T20:55:54.041-04:00  WARN 27272 --- [administracion-usuarios] [  restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.
+2026-05-16T20:55:54.045-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table `admin_usuarios_db`.`flyway_schema_history` does not exist yet
+2026-05-16T20:55:54.046-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.003s)
+2026-05-16T20:55:54.055-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table `admin_usuarios_db`.`flyway_schema_history` ...
+2026-05-16T20:55:54.138-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `admin_usuarios_db`: << Empty Schema >>
+2026-05-16T20:55:54.141-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema `admin_usuarios_db` to version "1 - crear admin usuarios"
+2026-05-16T20:55:54.206-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema `admin_usuarios_db`, now at version v1 (execution time 00:00.049s)
+2026-05-16T20:55:54.224-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-16T20:55:54.226-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-16T20:55:54.233-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-16T20:55:54.234-04:00  WARN 27272 --- [administracion-usuarios] [  restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 8.4.3 version for [org.hibernate.dialect.MariaDBDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 10.4.0. Check the community dialects project for available legacy versions.
+2026-05-16T20:55:54.279-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-16T20:55:54.284-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-16T20:55:54.324-04:00  WARN 27272 --- [administracion-usuarios] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-16T20:55:54.332-04:00  WARN 27272 --- [administracion-usuarios] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2026-05-16T20:55:54.540-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2026-05-16T20:55:54.549-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] c.c.a.AdministracionUsuariosApplication  : Started AdministracionUsuariosApplication in 1.051 seconds (process running for 322.762)
+2026-05-16T20:55:54.551-04:00  INFO 27272 --- [administracion-usuarios] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  06:13 min
+[INFO] Finished at: 2026-05-16T20:56:43-04:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.3.5:run (default-cli) on project administracion-usuarios: Process terminated with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
