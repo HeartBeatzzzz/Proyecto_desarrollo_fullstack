@@ -1,0 +1,27 @@
+server:
+  port: 8080   # El Gateway escuchará en este puerto
+
+spring:
+  application:
+    name: gateway-service   # Nombre con el que se registra en Eureka
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true             # habilita rutas basadas en el service id
+          lower-case-service-id: true
+      routes:
+        - id: usuarios-service
+          uri: lb://ms-usuarios
+          predicates:
+            - Path=/api/usuarios/**
+        - id: reservas-service
+          uri: lb://ms-reservas
+          predicates:
+            - Path=/api/reservas/**
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
