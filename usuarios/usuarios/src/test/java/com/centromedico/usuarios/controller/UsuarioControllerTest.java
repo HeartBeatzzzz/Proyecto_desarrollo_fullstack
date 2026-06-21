@@ -69,7 +69,7 @@ class UsuarioControllerTest {
     }
 
     @Test
-    void listarTodosParaAdmin_deberiaRetornarListaDeUsuarios() throws Exception {
+    void listarTodosParaAdminRetornarListaDeUsuariosTest() throws Exception {
         when(usuarioService.obtenerTodos()).thenReturn(List.of(usuarioResponseDTO));
 
         mockMvc.perform(get("/api/usuarios/admin"))
@@ -83,7 +83,7 @@ class UsuarioControllerTest {
     }
 
     @Test
-    void obtenerPorIdAdmin_cuandoExiste_deberiaRetornarUsuario() throws Exception {
+    void obtenerPorIdAdminCuandoExisteRetornarUsuarioTest() throws Exception {
         when(usuarioService.obtenerPorId(1L)).thenReturn(Optional.of(usuarioResponseDTO));
 
         mockMvc.perform(get("/api/usuarios/admin/1"))
@@ -95,7 +95,7 @@ class UsuarioControllerTest {
     }
 
     @Test
-    void obtenerPorIdAdmin_cuandoNoExiste_deberiaRetornar404() throws Exception {
+    void obtenerPorIdAdmiCuandoNoExisteRetornar404Test() throws Exception {
         when(usuarioService.obtenerPorId(99L)).thenReturn(Optional.empty());
 
         mockMvc.perform(get("/api/usuarios/admin/99"))
@@ -105,7 +105,7 @@ class UsuarioControllerTest {
     }
 
     @Test
-    void obtenerPorId_cuandoExiste_deberiaRetornarUsuario() throws Exception {
+    void obtenerPorIdCuandoexisteRetornarUsuarioTest() throws Exception {
         when(usuarioService.obtenerPorId(1L)).thenReturn(Optional.of(usuarioResponseDTO));
 
         mockMvc.perform(get("/api/usuarios/1"))
@@ -116,7 +116,7 @@ class UsuarioControllerTest {
     }
 
     @Test
-    void obtenerPorId_cuandoNoExiste_deberiaRetornar404() throws Exception {
+    void obtenerPorIdCuandoNoExisteRetornar404Test() throws Exception {
         when(usuarioService.obtenerPorId(99L)).thenReturn(Optional.empty());
 
         mockMvc.perform(get("/api/usuarios/99"))
@@ -126,7 +126,7 @@ class UsuarioControllerTest {
     }
 
     @Test
-    void crearAdmin_conDTOValido_deberiaRetornar201() throws Exception {
+    void crearAdminDTOValidoRetornar201Test() throws Exception {
         when(usuarioService.crear(any(UsuarioRequestDTO.class))).thenReturn(usuarioResponseDTO);
 
         mockMvc.perform(post("/api/usuarios/admin")
@@ -140,7 +140,7 @@ class UsuarioControllerTest {
     }
 
     @Test
-    void crearAdmin_conDTOInvalido_deberiaRetornar400() throws Exception {
+    void crearAdminDTOInvalidoRetornar400Test() throws Exception {
         UsuarioRequestDTO dtoInvalido = new UsuarioRequestDTO(
                 "",
                 "",
@@ -157,7 +157,7 @@ class UsuarioControllerTest {
     }
 
     @Test
-    void crearUsuario_conDTOValido_deberiaRetornar201() throws Exception {
+    void crearUsuarioDTOValidoRetornar201Test() throws Exception {
         when(usuarioService.crear(any(UsuarioRequestDTO.class))).thenReturn(usuarioResponseDTO);
 
         mockMvc.perform(post("/api/usuarios")
@@ -170,7 +170,7 @@ class UsuarioControllerTest {
     }
 
     @Test
-    void actualizar_cuandoExiste_deberiaRetornarUsuarioActualizado() throws Exception {
+    void actualizarCuandoExisteRetornarUsuarioActualizadoTest() throws Exception {
         when(usuarioService.actualizar(eq(1L), any(UsuarioRequestDTO.class)))
                 .thenReturn(Optional.of(usuarioResponseDTO));
 
@@ -184,7 +184,7 @@ class UsuarioControllerTest {
     }
 
     @Test
-    void actualizar_cuandoNoExiste_deberiaRetornar404() throws Exception {
+    void actualizarCuandoNoExisteRetornar404Test() throws Exception {
         when(usuarioService.actualizar(eq(99L), any(UsuarioRequestDTO.class)))
                 .thenReturn(Optional.empty());
 
@@ -197,7 +197,7 @@ class UsuarioControllerTest {
     }
 
     @Test
-    void eliminar_cuandoExiste_deberiaRetornar204() throws Exception {
+    void eliminarCuandoExisteRetornar204Test() throws Exception {
         when(usuarioService.eliminar(1L)).thenReturn(true);
 
         mockMvc.perform(delete("/api/usuarios/admin/1"))
@@ -207,7 +207,7 @@ class UsuarioControllerTest {
     }
 
     @Test
-    void eliminar_cuandoNoExiste_deberiaRetornar404() throws Exception {
+    void eliminarCuandoNoExisteRetornar404Test() throws Exception {
         when(usuarioService.eliminar(99L)).thenReturn(false);
 
         mockMvc.perform(delete("/api/usuarios/admin/99"))

@@ -11,6 +11,7 @@ import org.springframework.web.client.RestTemplate;
 @EnableDiscoveryClient
 @EnableFeignClients
 @SpringBootApplication
+
 public class UsuariosApplication {
 
     public static void main(String[] args) {

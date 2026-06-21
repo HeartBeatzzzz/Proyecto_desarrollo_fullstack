@@ -8,7 +8,7 @@ reservas:
 
 # Aplicacion
 
-# Base de datos, JPA, Flyway y Application Name
+#base de datos, JPA, Flyway y Application Name
 spring:
   datasource:
     url: jdbc:mariadb://localhost:3306/usuarios_db
@@ -28,11 +28,11 @@ spring:
   application:
     name: ms-usuarios
 
-# Servidor
+#servidor
 server:
   port: 8081
 
-# Seguridad simple para desarrollo
+#seguridad simple para desarrollo
 app:
   security:
     admin:
@@ -42,14 +42,13 @@ app:
       username: usuario
       password: usuario123
 
-# Testing y documentación con Swagger
+#testing y documentación con Swagger
 springdoc:
   api-docs:
     enabled: true
   swagger-ui:
     enabled: true
-    path: /doc/swagger-ui.htm
-  # Configuración de Basic Auth para Swagger UI
+    path: /doc/swagger-ui.html
   security-schemes:
     basicAuth:
       type: http
