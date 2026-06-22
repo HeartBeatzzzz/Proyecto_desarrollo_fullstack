@@ -1,0 +1,75 @@
+# URLs de otros servicios
+usuarios:
+  service:
+    url: http://localhost:8081
+reservas:
+  service:
+    url: http://localhost:8082
+
+# Aplicacion
+
+#base de datos, JPA, Flyway y Application Name
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3306/usuarios_db
+    username: root
+    password: ""
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+  application:
+    name: ms-usuarios
+
+#servidor
+server:
+  port: 8081
+
+#seguridad simple para desarrollo
+app:
+  security:
+    admin:
+      username: admin
+      password: admin123
+    user:
+      username: usuario
+      password: usuario123
+
+#testing y documentación con Swagger
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+    path: /doc/swagger-ui.html
+  security-schemes:
+    basicAuth:
+      type: http
+      scheme: basic
+  security-requirements:
+    - basicAuth: []
+
+eureka:
+  instance:
+    hostname: localhost
+    statusPageUrlPath: /doc/swagger-ui.html
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
